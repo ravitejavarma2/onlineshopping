@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Registration Form</title>
+    <style>
+        *{
+            background-color: #98FB98;
+            left padding-left:2000px;
+        }
+        .form{
+            width: fit-content;
+            /*padding-left:auto;*/
+            padding-left:400px;
+            
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        #btnSubmit{
+            background-color:red;
+            color: white;
+            padding: 10px 15px;
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="form">
+        <h1 style="color: red;">Registration Form</h1>
+        <form name="regform" method="post" onsubmit="validateform()">
+
+            <tr>
+            <td><label for="name">NAME : </label></td>
+            <td><input type="text" name="name" id="name" placeholder="Enter your name!"></td></tr>
+            <br><hr>
+            <tr>
+            <td><label>Gender</label></td>
+            <input type="radio" id="male" value="male">
+            <td><label for="male">Male</label></td>
+            <input type="radio" id="female" value="female">
+            <td><label for="male">female</label><hr></td></tr>
+            
+            <tr>
+            <td><label for="country">Country</label></td>
+            <td><select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="usa">India</option>
+            <option value="usa">Canada</option>
+            <option value="usa">japan</option>
+            <hr>
+
+            
+            <tr>
+            <td><label for="dob">DOB : </label></td>
+            <td><input type="date" name="" id="dob" placeholder="Enter your date of birth!">
+            <br><hr><html></td></tr>
+            
+            <tr>
+            <td><label for="email">Email: </label></td>
+            <td><input type="email" name="" id="email" placeholder="Enter your email address!">
+            
+            <hr></td></tr>
+            <tr>
+            <td><label for="password">PASSWORD : </label></td>
+            <td><input type="password" name="" id="password" placeholder="Enter password!">
+            <hr></td></tr>
+            <tr>
+            <td><label for="rpassword">Re-Enter PASSWORD : </label></td>
+            <td><input type="password" name="" id="rpassword" placeholder="Enter password!">
+            <hr></td></tr>
+            <input type="checkbox" name="" id="accept">
+            <tr>
+            <td><label for="accept">I agree to terms</label></td></tr>
+            <hr>
+
+            <button type="submit" id="btnSubmit" style="
+            margin: 8px 0;
+            border: none;">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
